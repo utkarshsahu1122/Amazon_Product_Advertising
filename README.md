@@ -39,25 +39,3 @@ This project scrapes and preprocesses a large-scale Amazon apparel dataset, then
 ## Dataset
 
 Amazon apparel dataset — ~183,000 items across multiple categories (shirts, dresses, footwear, etc.)
-
-## Usage
-
-```bash
-git clone https://github.com/<your-username>/amazon-apparel-recommendation
-cd amazon-apparel-recommendation
-pip install -r requirements.txt
-python recommend.py --product_id <ID> --top_n 10
-```
-
-## Project Structure
-
-```
-├── data/                  # Raw and cleaned dataset
-├── notebooks/             # EDA and experimentation
-├── src/
-│   ├── preprocess.py      # Data cleaning pipeline
-│   ├── vectorizer.py      # TF-IDF feature extraction
-│   └── recommend.py       # Similarity and recommendation logic
-├── requirements.txt
-└── README.md
-```
